@@ -13,7 +13,7 @@ public class PersonEntity {
     @GeneratedValue
     private int id;
 
-    private Adress adress;
+    private Address adress;
 
     private String name;
 
@@ -23,7 +23,7 @@ public class PersonEntity {
     )
     private List<CarEntity> cars;
 
-    public PersonEntity(String name, Adress adress, List<CarEntity> cars) {
+    public PersonEntity(String name, Address adress, List<CarEntity> cars) {
         this.name = name;
         this.adress = adress;
         this.cars = cars;

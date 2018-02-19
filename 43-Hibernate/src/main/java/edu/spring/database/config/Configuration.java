@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import edu.spring.database.hibernate.CarDao;
 import edu.spring.database.hibernate.PersonDao;
-import edu.spring.database.model.Adress;
+import edu.spring.database.model.Address;
 import edu.spring.database.model.CarEntity;
 import edu.spring.database.model.PersonEntity;
 import edu.spring.database.model.WheelEntity;
@@ -52,7 +52,7 @@ public class Configuration implements InitializingBean {
 		carDao.save(r8, m3);
 
 		// Personen anlegen
-		PersonEntity personEntity = new PersonEntity("Felix", new Adress("Musterstrasse", 2), Arrays.asList(r8, m3));
+		PersonEntity personEntity = new PersonEntity("Felix", new Address("Musterstrasse", 2), Arrays.asList(r8, m3));
 		personDao.save(personEntity);
 
 		System.out.println("Konfiguration abgeschlossen");

@@ -5,21 +5,21 @@ package edu.spring.database.model;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class Adress {
+public class Address {
 
     private String street;
     private int number;
 
-    public Adress(String street, int number) {
+    public Address(String street, int number) {
         this.street = street;
         this.number = number;
     }
 
-    public Adress() { }
+    public Address() { }
 
     @Override
     public String toString() {
-        return "Adress{" +
+        return "Address{" +
                 "street='" + street + '\'' +
                 ", number=" + number +
                 '}';
