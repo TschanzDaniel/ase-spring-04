@@ -15,6 +15,10 @@
 		<!-- Spring -->
 		<spring-framework.version>5.2.7.RELEASE</spring-framework.version>
 		<spring-data.version>1.10.2.RELEASE</spring-data.version>
+		<hibernate.em.version>5.4.28.Final</hibernate.em.version>
+		<hibernate.version>5.4.28.Final</hibernate.version>
+		<hibernatesearch.version>5.8.2.Final</hibernatesearch.version>
+		<jta.version>1.1</jta.version>
 
 		<!-- H2 -->
 		<h2.version>1.4.200</h2.version>
@@ -66,9 +70,9 @@
 			<version>${org.slf4j.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.14.0</version>
 		</dependency>
 
 
@@ -83,8 +87,18 @@
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${hibernate.em.version}</version>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search-orm</artifactId>
+			<version>${hibernatesearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>${jta.version}</version>
 		</dependency>
 
 		<!-- EclipseLink -->
