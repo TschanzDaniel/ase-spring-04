@@ -14,7 +14,7 @@ import edu.spring.database.repository.CarRepository;
 @Service
 @Transactional(propagation = Propagation.NESTED)
 public class CarService {
-	
+
     @Autowired
     private CarRepository repository;
 
@@ -26,7 +26,7 @@ public class CarService {
     public CarEntity save(final CarEntity entity) {
         return repository.save(entity);
     }
-    
+
     public CarEntity findOne(final Integer id) {
         return repository.findOne(id);
     }
@@ -34,13 +34,13 @@ public class CarService {
     public Iterable<CarEntity> findAll() {
         return repository.findAll();
     }
-    
+
     public List<CarEntity> findByModel(final String model) {
         return repository.findByModel(model);
     }
-    
+
     public List<CarEntity> findByOwnerName(final String owner) {
         return repository.findByOwnerName(owner);
     }
-    
+
 }

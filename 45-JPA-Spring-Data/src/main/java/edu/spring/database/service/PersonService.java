@@ -21,11 +21,11 @@ public class PersonService {
      public PersonEntity save(final PersonEntity entity) {
         return repository.save(entity);
     }
-    
+
     public PersonEntity findOne(final Integer id) {
         return repository.findOne(id);
     }
-    
+
     public PersonEntity findOne(final Long id) {
         return repository.findOne((int)(long)id);
     }
