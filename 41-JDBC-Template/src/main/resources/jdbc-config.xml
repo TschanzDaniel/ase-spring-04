@@ -7,17 +7,11 @@
     <context:component-scan base-package="edu.spring.database.jdbc"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName">
-            <value>org.h2.Driver</value>
-        </property>
+        <property name="driverClassName" value="org.h2.Driver"/>
 
-        <property name="url">
-            <value>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1</value>
-        </property>
+        <property name="url" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"/>
 
-        <property name="username">
-            <value>sa</value>
-        </property>
+        <property name="username" value="sa"/>
     </bean>
 
      <!--
